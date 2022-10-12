@@ -1,0 +1,37 @@
+.card {
+    width: 290px;
+    height: 300px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+
+.card-info {
+    width: 270px;
+    margin-inline: 10px;
+}
+
+.card-info img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.btn-cart {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(192, 139, 248);
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-cart:hover {
+    background-color: rgb(137, 63, 215);
+}
+
+.btn-cart:focus {
+    background-color: rgb(215, 73, 63);
+}
