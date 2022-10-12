@@ -36,9 +36,9 @@ const Details = ({ duration }) => {
                     </div>
                 </div>
                 <div className='fitness' id='flex'>
-                    <h4>75 kg</h4>
-                    <h4>6.5 ft</h4>
-                    <h4>25yrs</h4>
+                    <h4>95 kg</h4>
+                    <h4>5.5 ft</h4>
+                    <h4>27yrs</h4>
                 </div>
                 <h3>Add a Break</h3>
                 <div className='break' id='flex'>
