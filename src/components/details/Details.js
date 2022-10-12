@@ -31,7 +31,7 @@ const Details = ({ duration }) => {
             <div className='details-info'>
                 <div className='user'>
                     <div>
-                        <h3>Farhan Hoque</h3>
+                        <h3>Rinku Paul</h3>
                         <h5>Chittagong, Bangladesh</h5>
                     </div>
                 </div>
