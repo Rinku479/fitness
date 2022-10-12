@@ -1,7 +1,18 @@
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import './Details.css'
 
 const Details = ({ duration }) => {
+
+    const showToastMessage = () => {
+        toast("Plan Ready For Today!!! Go and Workout", {
+            position: toast.POSITION.TOP_CENTER,
+            className: "toast-message",
+        });
+    };
+
+
     let time = 0;
 
     for (let i = 0; i < duration.length; i++) {
@@ -34,18 +45,21 @@ const Details = ({ duration }) => {
                 </div>
                 <h3>Add a Break</h3>
                 <div className='break' id='flex'>
-                    <h5 onClick={() => breakTime("10 seconds")}>10s</h5>
-                    <h5 onClick={() => breakTime("20 seconds")}>20s</h5>
-                    <h5 onClick={() => breakTime("30 seconds")}>30s</h5>
-                    <h5 onClick={() => breakTime("40 seconds")}>40s</h5>
-                    <h5 onClick={() => breakTime("50 seconds")}>50s</h5>
+                    <button onClick={() => breakTime("10 seconds")}>10s</button>
+                    <button onClick={() => breakTime("20 seconds")}>20s</button>
+                    <button onClick={() => breakTime("30 seconds")}>30s</button>
+                    <button onClick={() => breakTime("40 seconds")}>40s</button>
+                    <button onClick={() => breakTime("50 seconds")}>50s</button>
                 </div>
                 <h3>Exercise Details</h3>
                 <div className='calculation'>
                     <p>Exercise Time: {time} minutes</p>
                     <p>Break Time: {breaktime}</p>
                 </div>
-                <button className='btn-activity'>Activity Completed</button>
+                <div>
+                    <button className='btn-activity' onClick={showToastMessage}>Activity Completed</button>
+                    <ToastContainer></ToastContainer>
+                </div>
             </div>
         </div>
     );
