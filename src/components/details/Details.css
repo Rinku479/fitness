@@ -1,0 +1,81 @@
+.details {
+    background-color: rgb(241, 236, 246);
+}
+
+.details-info {
+    margin-inline: 15px;
+    margin-block: 20px;
+    text-align: left;
+}
+
+.fitness {
+    background-color: rgb(234, 228, 240);
+    border-radius: 10px;
+    padding-inline: 10px;
+}
+
+#flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user {
+    margin-block: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.user div {
+    padding-inline: 5px;
+}
+
+.user img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.user h3,
+h5 {
+    margin-block: 0;
+}
+
+.fitness {
+    margin-block: 20px;
+}
+
+.break {
+    margin-block: 20px;
+}
+
+.break h5 {
+    padding: 8px 5px;
+    background-color: rgb(192, 139, 248);
+    border-radius: 50%;
+}
+
+.break h5:hover {
+    background-color: rgb(137, 63, 215);
+}
+
+.calculation {
+    margin-block: 20px;
+}
+
+.calculation p {
+
+    background-color: rgb(234, 228, 240);
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.btn-activity {
+    width: 100%;
+    background-color: rgb(192, 139, 248);
+    border: none;
+    border-radius: 8px;
+    padding-block: 10px;
+}
+
+.btn-activity:hover {
+    background-color: rgb(137, 63, 215);
+}
